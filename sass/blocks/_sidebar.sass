@@ -1,0 +1,37 @@
+.sidebar
+  background-color: darkblue
+  padding-top: 50px
+  padding-bottom: 50px
+  &--hidden
+    display: none
+
+.list
+  list-style: none
+  &-block
+    display: flex
+  &-left
+    margin-right: 180px
+    &__item
+      margin-top: 25px
+      margin-bottom: 30px
+      font-size: 2.82em
+      &:hover
+        opacity: 1
+        border-bottom: 1px solid white
+      &:first-child
+        margin-top: 0
+  &-right
+    &--hidden
+      display: none
+    &__item
+      font-size: 1.88em
+      padding-bottom: 10px
+      padding-top: 10px
+      &:hover
+        opacity: 1
+        font-weight: 600
+  &__item
+    opacity: 0.5
+  &__link
+    color: #ffffff
+    text-decoration: none

@@ -1,0 +1,59 @@
+.banner
+  background-color: #F5F5F5
+  background-image: url('../img/logo-red.png')
+  background-repeat: no-repeat
+  background-position: right 200px center
+  display: flex
+  align-items: center
+  justify-content: space-between
+  border: 1px solid rgba(189, 199, 214, 0.35)
+  margin-top: 100px
+  &__blur-block
+    padding-top: 154px
+    padding-bottom: 61px
+    padding-right: 129px
+    padding-left: 70px
+    width: 60%
+    -webkit-background: linear-gradient(107.56deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 100%)
+    -moz-background: linear-gradient(107.56deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 100%)
+    -ms-background: linear-gradient(107.56deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 100%)
+    background: linear-gradient(107.56deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 100%)
+    box-shadow: 6.09591px 13px 34.5435px #E5E9F0
+    backdrop-filter: blur(10.4043px)
+    // background-image: url('../img/blur-bg.svg')
+  &__text
+    font-size: 1.88em
+    line-height: 1.2
+    font-weight: 400
+  &__title
+    font-size: 4.23em
+    line-height: 1
+    font-weight: 600
+    margin-top: 16px
+    margin-bottom: 76px
+  &-link
+    display: flex
+    align-items: center
+    color: #0E0E0E
+    text-decoration: none
+    &__text
+      font-weight: 700
+      font-size: 1.05em
+      line-height: 1.2
+      margin-left: 31px
+
+.paggination
+  list-style: none
+  margin-right: 100px
+  &__item
+    background: rgba(37, 79, 157, 0.37)
+    width: 12px
+    height: 12px
+    border-radius: 50%
+    margin-bottom: 10px
+    cursor: pointer
+    &:last-child
+      margin-bottom: 0
+
+    &--active
+      background: #254F9D
