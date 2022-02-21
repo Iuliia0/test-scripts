@@ -1,26 +1,35 @@
 .banner
   background-color: #F5F5F5
-  background-image: url('../img/logo-red.png')
-  background-repeat: no-repeat
-  background-position: right 200px center
-  display: flex
-  align-items: center
-  justify-content: space-between
   border: 1px solid rgba(189, 199, 214, 0.35)
   margin-top: 100px
+  display: flex
+  align-items: center
+  height: 773px
+  position: relative
+  border: 1px solid red
+  &-container
+    border: 3px solid green
+    background-image: url('../img/logo-red.png')
+    background-repeat: no-repeat
+    background-position: right 200px center
+    position: absolute
+    opacity: 0
+    transition: opacity .5s
+    &--active
+      opacity: 1
   &__blur-block
+    height: 773px
     padding-top: 154px
     padding-bottom: 61px
     padding-right: 129px
     padding-left: 70px
-    width: 60%
+    width: 70%
     -webkit-background: linear-gradient(107.56deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 100%)
     -moz-background: linear-gradient(107.56deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 100%)
     -ms-background: linear-gradient(107.56deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 100%)
     background: linear-gradient(107.56deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 100%)
     box-shadow: 6.09591px 13px 34.5435px #E5E9F0
     backdrop-filter: blur(10.4043px)
-    // background-image: url('../img/blur-bg.svg')
   &__text
     font-size: 1.88em
     line-height: 1.2
@@ -43,8 +52,10 @@
       margin-left: 31px
 
 .paggination
+  border: 5px solid yellow
   list-style: none
-  margin-right: 100px
+  position: absolute
+  right: 100px
   &__item
     background: rgba(37, 79, 157, 0.37)
     width: 12px

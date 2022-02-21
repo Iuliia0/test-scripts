@@ -1,9 +1,19 @@
 .sidebar
-  background-color: darkblue
-  padding-top: 50px
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  background-color: #10367C
+  padding-top: 150px
   padding-bottom: 50px
+  z-index: 3
+  transition: all .2s ease
+  overflow: auto
+  -ms-overflow-style: none
+  &::-webkit-scrollbar
+    width: 0
   &--hidden
-    display: none
+    top: -100%
 
 .list
   list-style: none

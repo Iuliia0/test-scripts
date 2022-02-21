@@ -54,4 +54,3 @@ const sidebar = function() {
   })
 }
 sidebar()
-// export default sidebar
